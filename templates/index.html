@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Guardar Terrario</h1>
+    <form action="{{ url_for('guardar') }}" method="POST">
+        <label for="nombre_terrario">Nombre del Terrario:</label>
+        <input type="text" id="nombre_terrario" name="nombre_terrario" required><br><br>
+        
+        <label for="ancho">Ancho del Terrario:</label>
+        <input type="text" id="ancho" name="ancho" required><br><br>
+        
+        <label for="largo">Largo del Terrario:</label>
+        <input type="text" id="largo" name="largo" required><br><br>
+        
+        <label for="nombre_serpiente">Nombre de la Serpiente:</label>
+        <input type="text" id="nombre_serpiente" name="nombre_serpiente" required><br><br>
+        
+        <label for="longitud">Longitud de la Serpiente:</label>
+        <input type="text" id="longitud" name="longitud" required><br><br>
+        
+        <label for="especie">Especie de la Serpiente:</label>
+        <input type="text" id="especie" name="especie" required><br><br>
+        
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>

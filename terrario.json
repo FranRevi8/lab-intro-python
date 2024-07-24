@@ -1,0 +1,12 @@
+{
+    "nombre": "Nuevo Terrario",
+    "ancho": "55",
+    "largo": "212",
+    "habitantes": [
+        {
+            "nombre": "Culebra",
+            "longitud": "50",
+            "especie": "Culebris serpentecillis"
+        }
+    ]
+}
